@@ -44,7 +44,8 @@ function login() {
     const password = document.getElementById('password').value;
 
     // Sample credentials check (you can replace this with your logic)
-    if (username === 'DW-007' && password === 'Digitalwave@12#') {
+    if (username === 'DW-007' && password === 'Digitalwave@12#') { 
+        localStorage.setItem('loggedIn', 'true');
       // Redirect to index.html if credentials are correct
       window.location.href = 'index.html';
     } else {
