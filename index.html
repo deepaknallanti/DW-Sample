@@ -2,7 +2,6 @@
 <html>
 
 <head>
-	<meta http-equiv="refresh" content="0; url=login.html">	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,6 +22,14 @@
 	<link rel="stylesheet" href="charts/css/morris.css">
 	<!-- jvectormap -->
 	<link rel="stylesheet" href="css/jquery-jvectormap.css">
+	<script>
+        // Check if user is logged in
+        document.addEventListener('DOMContentLoaded', function() {
+            if (!localStorage.getItem('loggedIn')) {
+                window.location.href = 'login.html';
+            }
+        });
+    </script>
 
 	<script src="js/modernizr.min.js"></script>
 </head>

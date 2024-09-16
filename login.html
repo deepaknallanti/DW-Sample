@@ -16,7 +16,12 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/blue.css" id="style_theme">
 	<link rel="stylesheet" href="css/responsive.css">
-
+	<script>
+        function handleLogin() {
+            localStorage.setItem('loggedIn', 'true');
+            window.location.href = 'index.html'; // Redirect to dashboard
+        }
+    </script>
 	<script src="js/modernizr.min.js"></script>
 </head>
 
@@ -66,7 +71,7 @@
 								<!-- /Check Box -->	
 								<!-- Login Button -->			
 								<div class="button-btn-block">
-									<button type="button" class="btn btn-primary btn-lg btn-block" onclick="login()">Login</button>
+									<button type="button" class="btn btn-primary btn-lg btn-block" onclick="handleLogin()">Login</button>
 								</div>
 								<!-- /Login Button -->	
 								<!-- Links -->	
